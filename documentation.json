@@ -1,0 +1,164 @@
+{
+  "name": "Your SaaS Product",
+  "initialRoute": "getting-started/introduction",
+  "logo-dark": "https://via.placeholder.com/200x60/ffffff/000000?text=Your+Logo",
+  "logo-light": "https://via.placeholder.com/200x60/000000/ffffff?text=Your+Logo",
+  "logo-small-dark": "https://via.placeholder.com/32x32/ffffff/000000?text=L",
+  "logo-small-light": "https://via.placeholder.com/32x32/000000/ffffff?text=L",
+  "colors": {
+    "light": {
+      "brand": "#3b82f6"
+    },
+    "dark": {
+      "brand": "#60a5fa"
+    }
+  },
+  "navbar": {
+    "actions": {
+      "primary": {
+        "title": "Get Started",
+        "link": "https://yourapp.com/signup"
+      },
+      "links": [
+        {
+          "title": "Login",
+          "link": "https://yourapp.com/login"
+        },
+        {
+          "title": "Support",
+          "link": "mailto:support@yourapp.com"
+        }
+      ]
+    }
+  },
+  "navigation": {
+    "tabs": [
+      {
+        "tab": "Documentation",
+        "icon": "book",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "rocket",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Introduction",
+                "path": "getting-started/introduction",
+                "icon": "star"
+              },
+              {
+                "title": "Quickstart",
+                "path": "getting-started/quickstart",
+                "icon": "zap"
+              },
+              {
+                "title": "Core Concepts",
+                "path": "getting-started/core-concepts",
+                "icon": "lightbulb"
+              }
+            ]
+          },
+          {
+            "group": "Guides",
+            "icon": "map",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Installation",
+                "path": "guides/installation",
+                "icon": "download"
+              },
+              {
+                "title": "Configuration",
+                "path": "guides/configuration",
+                "icon": "settings"
+              },
+              {
+                "title": "Best Practices",
+                "path": "guides/best-practices",
+                "icon": "check-circle"
+              }
+            ]
+          },
+          {
+            "group": "Components Demo",
+            "icon": "package",
+            "expandable": true,
+            "pages": [
+              {
+                "title": "Components Overview",
+                "path": "components/components-overview",
+                "icon": "eye"
+              },
+              {
+                "title": "Text & Formatting",
+                "path": "components/text-and-formatting",
+                "icon": "type"
+              },
+              {
+                "title": "Code Examples",
+                "path": "components/code-examples",
+                "icon": "code"
+              },
+              {
+                "title": "Callouts & Alerts",
+                "path": "components/callouts-and-alerts",
+                "icon": "megaphone"
+              },
+              {
+                "title": "Images & Media",
+                "path": "components/images-and-media",
+                "icon": "image"
+              },
+              {
+                "title": "Tables & Lists",
+                "path": "components/tables-and-lists",
+                "icon": "list"
+              },
+              {
+                "title": "Expandables & Tabs",
+                "path": "components/expandables-and-tabs",
+                "icon": "chevron-down"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "API Reference",
+        "icon": "code",
+        "groups": [
+          {
+            "group": "Getting Started",
+            "icon": "play-circle",
+            "expandable": false,
+            "pages": [
+              {
+                "title": "Authentication",
+                "path": "api-reference/authentication",
+                "icon": "key"
+              },
+              {
+                "title": "Getting Started",
+                "path": "api-reference/getting-started",
+                "icon": "rocket"
+              }
+            ]
+          },
+          {
+            "group": "Pet Store API",
+            "icon": "database",
+            "expandable": true,
+            "openapi": "api-reference/petstore-openapi.yaml",
+            "pages": []
+          }
+        ]
+      }
+    ]
+  },
+  "seo": {
+    "robots:index": true,
+    "robots:follow": true
+  }
+}
