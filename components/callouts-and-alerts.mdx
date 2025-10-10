@@ -1,9 +1,7 @@
 ---
 title: Callouts & Alerts
-description: "Create attention-grabbing callouts, alerts, and highlighted information boxes using Documentation.AI's callout components."
+description: "Create attention-grabbing callouts, alerts, and highlighted information boxes using Documentation.AI's callout components for ACME Company."
 ---
-
-# Callouts & Alerts
 
 Draw attention to important information with visually distinct callout boxes. Documentation.AI's callout components help you highlight tips, warnings, errors, and other critical information.
 
@@ -23,7 +21,7 @@ Use info callouts for helpful context, explanations, or additional details:
 
 ```jsx
 <Callout kind="info">
-  **Getting started**: New to our platform? Check out our [quickstart guide](../getting-started/quickstart) to set up your account in under 10 minutes.
+  **Getting started**: New to our platform? Check out our quickstart guide to set up your account in under 10 minutes.
 </Callout>
 
 <Callout kind="info">
@@ -45,7 +43,7 @@ Share helpful tips, best practices, and recommendations:
 
 ```jsx
 <Callout kind="tip">
-  **Pro tip**: Use environment variables to store API keys instead of hardcoding them in your application. This keeps your credentials secure and makes deployment easier.
+  **Pro tip**: Store sensitive configuration in environment variables rather than hardcoding values.
 </Callout>
 
 <Callout kind="tip">
@@ -67,7 +65,7 @@ Celebrate achievements, confirm successful operations, or highlight positive out
 
 ```jsx
 <Callout kind="success">
-  **Congratulations!** Your workspace has been successfully created. You can now invite team members and start your first project.
+  **Success!** Your setup is complete. You can now start using the platform.
 </Callout>
 
 <Callout kind="success">
@@ -89,11 +87,11 @@ Use alert callouts for important warnings, cautions, or things users should pay 
 
 ```jsx
 <Callout kind="alert">
-  **Important**: Changing your workspace subdomain will affect all existing bookmarks and shared links. Make sure to update any saved URLs.
+  **Important**: Changes to your configuration may affect existing integrations.
 </Callout>
 
 <Callout kind="alert">
-  **Breaking change in v2.0**: The `createUser()` function now requires an email parameter. Update your code before upgrading.
+  **Breaking change in v2.0**: API function signatures have been updated. Review the migration guide.
 </Callout>
 ```
 
@@ -111,11 +109,11 @@ Reserve danger callouts for critical warnings about destructive actions or serio
 
 ```jsx
 <Callout kind="danger">
-  **Warning**: Deleting your workspace is permanent and cannot be undone. All projects, tasks, and data will be lost forever.
+  **Warning**: Destructive operations cannot be undone. Make sure you have backups.
 </Callout>
 
 <Callout kind="danger">
-  **Security alert**: Never commit API keys or passwords to version control. Use environment variables or secure key management systems instead.
+  **Security alert**: Keep credentials secure and never expose them in code repositories.
 </Callout>
 ```
 
@@ -148,24 +146,14 @@ Callouts can contain any markdown content including lists, code, and links:
 
 ```jsx
 <Callout kind="info">
-  **Setting up your development environment**:
+  **Development setup example**:
   
-  1. **Install Node.js 16+** from [nodejs.org](https://nodejs.org)
-  2. **Clone the repository**:
-     ```bash
-     git clone https://github.com/yourcompany/your-project.git
-     cd your-project
-     ```
-  3. **Install dependencies**:
-     ```bash
-     npm install
-     ```
-  4. **Start the development server**:
-     ```bash
-     npm run dev
-     ```
+  1. Install dependencies
+  2. Configure environment variables  
+  3. Start the development server
+  4. Open your browser to localhost:3000
   
-  The application will be available at `http://localhost:3000`
+  Full setup instructions are available in our guide.
 </Callout>
 ```
 

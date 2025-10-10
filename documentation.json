@@ -1,32 +1,32 @@
 {
-  "name": "Your SaaS Product",
+  "name": "ACME Company",
   "initialRoute": "getting-started/introduction",
-  "logo-dark": "https://via.placeholder.com/200x60/ffffff/000000?text=Your+Logo",
-  "logo-light": "https://via.placeholder.com/200x60/000000/ffffff?text=Your+Logo",
-  "logo-small-dark": "https://via.placeholder.com/32x32/ffffff/000000?text=L",
-  "logo-small-light": "https://via.placeholder.com/32x32/000000/ffffff?text=L",
+  "logo-dark": "https://blob-cdn.documentation.ai/org-9a676b51-6366-4fb8-82b9-8bcebd1e04cd/doc-d763805d-9c20-4ace-b537-11aa3933f9f9/1760013180373-k2duii3j57f-logo-dark-full.svg",
+  "logo-light": "https://blob-cdn.documentation.ai/org-9a676b51-6366-4fb8-82b9-8bcebd1e04cd/doc-d763805d-9c20-4ace-b537-11aa3933f9f9/1760013153861-qlexiirnnji-logo-light-full.svg",
+  "logo-small-dark": "https://blob-cdn.documentation.ai/org-9a676b51-6366-4fb8-82b9-8bcebd1e04cd/doc-d763805d-9c20-4ace-b537-11aa3933f9f9/1760013124688-hmgekndm4e-logo-dark-small.svg",
+  "logo-small-light": "https://blob-cdn.documentation.ai/org-9a676b51-6366-4fb8-82b9-8bcebd1e04cd/doc-d763805d-9c20-4ace-b537-11aa3933f9f9/1760013089327-1bugjc5e8ru-logo-light-small.svg",
   "colors": {
     "light": {
-      "brand": "#3b82f6"
+      "brand": "#2d2d2d"
     },
     "dark": {
-      "brand": "#60a5fa"
+      "brand": "#f8f9fa"
     }
   },
   "navbar": {
     "actions": {
       "primary": {
         "title": "Get Started",
-        "link": "https://yourapp.com/signup"
+        "link": "https://acme.com/signup"
       },
       "links": [
         {
           "title": "Login",
-          "link": "https://yourapp.com/login"
+          "link": "https://acme.com/login"
         },
         {
           "title": "Support",
-          "link": "mailto:support@yourapp.com"
+          "link": "mailto:support@acme.com"
         }
       ]
     }

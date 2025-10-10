@@ -1,9 +1,7 @@
 ---
 title: Components Overview
-description: "Comprehensive overview of all Documentation.AI components available for creating rich, interactive documentation."
+description: "Comprehensive overview of all Documentation.AI components available for creating rich, interactive documentation for ACME Company."
 ---
-
-# Components Overview
 
 Documentation.AI provides a rich library of components to create engaging, interactive documentation. All components work seamlessly in both web and code editors, giving you flexibility in how you author content.
 
@@ -45,7 +43,6 @@ Rich media and visual elements:
 
 - **Images** - Optimized image display with responsive sizing
 - **Videos and Iframes** - Embedded multimedia content
-- **Diagrams** - Technical diagrams and flowcharts (coming soon)
 
 ### Interactive Components
 
@@ -53,18 +50,16 @@ Advanced interactive elements for enhanced user experience:
 
 - **Expandable Groups** - Organized collapsible sections
 - **Tabs** - Multi-panel content organization
-- **API Playground** - Interactive API testing (auto-generated from OpenAPI)
 
 ## Quick component reference
 
 <ExpandableGroup>
 <Expandable title="Basic Syntax Examples" default-open="true">
 
-```jsx
-// Text formatting
+Here are the most commonly used components:
+
 <Callout kind="info">Important information</Callout>
 
-// Code examples  
 <CodeGroup tabs="JavaScript,Python">
 ```javascript
 console.log("Hello World");
@@ -75,23 +70,44 @@ print("Hello World")
 ```
 </CodeGroup>
 
-// Interactive content
 <Expandable title="Click to expand">
 Hidden content here
 </Expandable>
 
-// API documentation
 <ParamField path="id" param-type="string" required="true">
   Unique identifier for the resource
 </ParamField>
+
+**Code syntax:**
+
+````markdown
+<Callout kind="info">Important information</Callout>
+
+<CodeGroup tabs="JavaScript,Python">
+```javascript
+console.log("Hello World");
 ```
+
+```python
+print("Hello World")
+```
+</CodeGroup>
+
+<Expandable title="Click to expand">
+Hidden content here
+</Expandable>
+
+<ParamField path="id" param-type="string" required="true">
+  Unique identifier for the resource
+</ParamField>
+````
 
 </Expandable>
 
 <Expandable title="Advanced Usage Patterns" default-open="false">
 
-```jsx
-// Nested components
+More complex component combinations:
+
 <ExpandableGroup>
 <Expandable title="Installation">
 <CodeGroup tabs="npm,yarn,pnpm">
@@ -123,28 +139,70 @@ Remember to restart your server after configuration changes.
 </Expandable>
 </ExpandableGroup>
 
-// Rich media with multiple formats
 <Image 
-  src="https://example.com/screenshot.png"
-  alt="Application dashboard screenshot"
+  src="https://blob-cdn.documentation.ai/org-9a676b51-6366-4fb8-82b9-8bcebd1e04cd/doc-d763805d-9c20-4ace-b537-11aa3933f9f9/1760013284686-qcst1aqods-Abstract-Painting-Light-Blue.webp"
+  alt="ACME Company abstract design example"
   width="800"
-  height="600"
-  priority={true}
+  height="400"
 />
+
+**Code syntax:**
+
+````markdown
+<ExpandableGroup>
+<Expandable title="Installation">
+<CodeGroup tabs="npm,yarn,pnpm">
+```bash
+npm install package-name
 ```
+
+```bash  
+yarn add package-name
+```
+
+```bash
+pnpm add package-name
+```
+</CodeGroup>
+</Expandable>
+
+<Expandable title="Configuration">
+<Callout kind="warning">
+Remember to restart your server after configuration changes.
+</Callout>
+
+```json
+{
+  "apiKey": "your-api-key",
+  "environment": "production"
+}
+```
+</Expandable>
+</ExpandableGroup>
+
+<Image 
+  uid="acme-overview-image"
+  src="https://blob-cdn.documentation.ai/org-9a676b51-6366-4fb8-82b9-8bcebd1e04cd/doc-d763805d-9c20-4ace-b537-11aa3933f9f9/1760013284686-qcst1aqods-Abstract-Painting-Light-Blue.webp"
+  alt="ACME Company abstract design example"
+  width="800"  
+  height="400"
+/>
+````
 
 </Expandable>
 </ExpandableGroup>
 
 ## Component selection guide
 
-### Choose components based on content type:
+### Choose components based on content type
 
-<CodeGroup tabs="Getting Started,API Reference,Tutorials,Troubleshooting">
-```jsx
-// For introductory content
+<ExpandableGroup>
+<Expandable title="Getting Started Pages" default-open="true">
+
+Use welcoming callouts and structured overviews:
+
 <Callout kind="success">
-  Welcome to our platform! 
+  Welcome to ACME Company! 
 </Callout>
 
 <ExpandableGroup>
@@ -154,10 +212,28 @@ Remember to restart your server after configuration changes.
 - Best practices
 </Expandable>
 </ExpandableGroup>
-```
 
-```jsx
-// For API documentation
+**Syntax:**
+````markdown
+<Callout kind="success">
+  Welcome to ACME Company! 
+</Callout>
+
+<ExpandableGroup>
+<Expandable title="What you'll learn">
+- Core concepts
+- Basic workflows  
+- Best practices
+</Expandable>
+</ExpandableGroup>
+````
+
+</Expandable>
+
+<Expandable title="API Reference Pages" default-open="false">
+
+Document parameters and responses clearly:
+
 <ParamField path="userId" param-type="string" required="true">
   The unique identifier for the user
 </ParamField>
@@ -166,23 +242,34 @@ Remember to restart your server after configuration changes.
   User object with profile information
 </ResponseField>
 
-<CodeGroup tabs="cURL,JavaScript,Python">
-```bash
-curl -X GET https://api.example.com/users/123
-```
+**Syntax:**
+````markdown
+<ParamField path="userId" param-type="string" required="true">
+  The unique identifier for the user
+</ParamField>
 
-```javascript
-const user = await api.getUser('123');
-```
+<ResponseField name="user" type="object">
+  User object with profile information
+</ResponseField>
+````
 
-```python
-user = api.get_user('123')
-```
-</CodeGroup>
-```
+</Expandable>
 
-```jsx
-// For step-by-step tutorials
+<Expandable title="Tutorial Pages" default-open="false">
+
+Provide clear prerequisites and step-by-step instructions:
+
+<Callout kind="info">
+  **Prerequisites**: Node.js 16+ and npm installed
+</Callout>
+
+**Steps:**
+1. Install the package
+2. Configure your environment
+3. Start building
+
+**Syntax:**
+````markdown
 <Callout kind="info">
   **Prerequisites**: Node.js 16+ and npm installed
 </Callout>
@@ -193,57 +280,58 @@ npm install our-package
 ```
 
 2. Configure your environment:
-<CodeGroup tabs="JavaScript,TypeScript">
 ```javascript
-// Basic configuration
 const config = {
   apiKey: process.env.API_KEY
 };
 ```
+````
 
-```typescript
-// TypeScript configuration
-interface Config {
-  apiKey: string;
-}
+</Expandable>
 
-const config: Config = {
-  apiKey: process.env.API_KEY!
-};
-```
-</CodeGroup>
-```
+<Expandable title="Troubleshooting Pages" default-open="false">
 
-```jsx
-// For troubleshooting guides
+Organize solutions with expandable error sections:
+
 <ExpandableGroup>
 <Expandable title="Common Error: Connection Timeout">
 
 <Callout kind="alert">
-**Error**: `ECONNECT timeout after 5000ms`
+**Error**: Connection timeout after 5000ms
 </Callout>
-
-**Cause**: Network connectivity issues or server overload
 
 **Solutions**:
 1. Check your internet connection
 2. Verify API endpoint URL
-3. Increase timeout value:
-
-```javascript
-const client = new ApiClient({
-  timeout: 10000 // 10 seconds
-});
-```
+3. Increase timeout value to 10 seconds
 
 </Expandable>
 
 <Expandable title="Authentication Failed">
-<!-- More troubleshooting content -->
+Contact support if authentication continues to fail.
 </Expandable>
 </ExpandableGroup>
-```
-</CodeGroup>
+
+**Syntax:**
+````markdown
+<ExpandableGroup>
+<Expandable title="Common Error: Connection Timeout">
+
+<Callout kind="alert">
+**Error**: Connection timeout after 5000ms
+</Callout>
+
+**Solutions**:
+1. Check your internet connection
+2. Verify API endpoint URL  
+3. Increase timeout value
+
+</Expandable>
+</ExpandableGroup>
+````
+
+</Expandable>
+</ExpandableGroup>
 
 ## Component best practices
 

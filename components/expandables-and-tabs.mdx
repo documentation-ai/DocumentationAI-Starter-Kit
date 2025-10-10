@@ -1,9 +1,7 @@
 ---
 title: Expandables & Tabs
-description: "Create interactive, organized content with expandable sections and tabbed interfaces using Documentation.AI's interactive components."
+description: "Create interactive, organized content for ACME Company with expandable sections and tabbed interfaces using Documentation.AI's interactive components."
 ---
-
-# Expandables & Tabs
 
 Organize content efficiently with collapsible sections and tabbed interfaces. These components help reduce cognitive load while keeping detailed information easily accessible.
 
@@ -93,7 +91,7 @@ Start important sections expanded to draw immediate attention:
 
 Get up and running in 10 minutes:
 
-- [ ] **Create account** - [Sign up here](https://yourapp.com/signup)
+- [ ] **Create account** - [Sign up here](https://acme.com/signup)
 - [ ] **Verify email** - Check your inbox for confirmation
 - [ ] **Complete profile** - Add your name and company info
 - [ ] **Create workspace** - Set up your team's home base
@@ -102,7 +100,7 @@ Get up and running in 10 minutes:
 - [ ] **Connect tools** - Link Slack, GitHub, or other services
 - [ ] **Complete tutorial** - 5-minute guided walkthrough
 
-**Need help?** Contact support or schedule a [demo call](https://yourapp.com/demo).
+**Need help?** Contact support or schedule a [demo call](https://acme.com/demo).
 
 </Expandable>
 
@@ -202,7 +200,7 @@ git --version   # Should show git version info
 - Configure git with your name and email:
   ```bash
   git config --global user.name "Your Name"
-  git config --global user.email "your.email@example.com"
+  git config --global user.email "your.email@acme.com"
   ```
 
 </Expandable>
@@ -349,7 +347,7 @@ Organize solutions by symptom or error type:
 1. **Incorrect password** - Use the "Forgot Password" link to reset
 2. **Account not verified** - Check your email for verification link
 3. **Caps lock enabled** - Passwords are case-sensitive
-4. **Corporate firewall** - Contact IT to allowlist `*.yourapp.com`
+4. **Corporate firewall** - Contact IT to allowlist `*.acme.com`
 
 **Two-factor authentication problems**:
 
@@ -373,7 +371,7 @@ Organize solutions by symptom or error type:
 1. **Check internet connection** - Try loading other websites
 2. **Clear browser cache** - Ctrl+Shift+Delete (Windows) or Cmd+Shift+Delete (Mac)
 3. **Disable browser extensions** - Try loading in incognito/private mode
-4. **Check our status page** - Visit [status.yourapp.com](https://status.yourapp.com)
+4. **Check our status page** - Visit [status.acme.com](https://status.acme.com)
 
 **App not responding**:
 
@@ -598,7 +596,7 @@ Include your API token in the Authorization header:
 
 ```bash
 curl -H "Authorization: Bearer YOUR_TOKEN" \
-     https://api.example.com/users
+     https://api.acme.com/users
 ```
 
 **Token management**:
@@ -615,10 +613,10 @@ Pass your API key as a header or query parameter:
 ```bash
 # As header (recommended)
 curl -H "X-API-Key: YOUR_API_KEY" \
-     https://api.example.com/users
+     https://api.acme.com/users
 
 # As query parameter  
-curl "https://api.example.com/users?api_key=YOUR_API_KEY"
+curl "https://api.acme.com/users?api_key=YOUR_API_KEY"
 ```
 
 </Expandable>
@@ -676,7 +674,7 @@ Combine expandables with tabbed content:
 // JavaScript SDK implementation
 const client = new ApiClient({
   token: 'your-api-token',
-  baseURL: 'https://api.example.com'
+  baseURL: 'https://api.acme.com'
 });
 
 async function getUsers() {
@@ -696,7 +694,7 @@ from api_client import ApiClient
 
 client = ApiClient(
     token='your-api-token',
-    base_url='https://api.example.com'
+    base_url='https://api.acme.com'
 )
 
 def get_users():
@@ -720,7 +718,7 @@ import (
 func main() {
     client := apiclient.New(apiclient.Config{
         Token:   "your-api-token",
-        BaseURL: "https://api.example.com",
+        BaseURL: "https://api.acme.com",
     })
 
     users, err := client.GetUsers()

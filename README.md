@@ -1,6 +1,6 @@
-# Documentation.AI Starter Kit
+# ACME Company Documentation Starter Kit
 
-A comprehensive starter kit for building beautiful, functional documentation with Documentation.AI. Perfect for SaaS products, APIs, and technical documentation of all kinds.
+A comprehensive starter kit for building beautiful, functional documentation with Documentation.AI. This starter kit is designed for ACME Company and can be customized for any SaaS product.
 
 ## 🚀 What's Included
 
@@ -10,7 +10,7 @@ This starter kit provides a complete documentation foundation with:
 - **Getting Started** - Introduction, quickstart, and core concepts
 - **Guides** - Installation, configuration, and best practices  
 - **Component Examples** - All major Documentation.AI components demonstrated
-- **API Reference** - Complete Pet Store API with authentication
+- **API Reference** - Complete ACME Company API with authentication
 
 ### 🎨 **All Major Components Showcased**
 - **Text & Formatting** - Typography, lists, and content structure
@@ -23,7 +23,7 @@ This starter kit provides a complete documentation foundation with:
 ### 🔧 **Ready-to-Use Configuration**
 - **Simplified documentation.json** - Essential navigation and branding
 - **SaaS-friendly structure** - Organized for any software product
-- **Complete OpenAPI spec** - Pet Store API for demonstration
+- **Complete OpenAPI spec** - ACME Company API for demonstration
 - **Responsive design** - Works perfectly on all devices
 
 ## 📋 Prerequisites
@@ -115,8 +115,8 @@ DocumentationAI-Starter-Kit/
 
 **Find and replace these placeholders throughout**:
 - `Your SaaS Product` → Your actual product name
-- `yourapp.com` → Your actual domain
-- `support@yourapp.com` → Your support email
+- `acme.com` → Your actual domain
+- `support@acme.com` → Your support email
 - Example URLs and API endpoints → Your actual endpoints
 
 ### 3. Customize Navigation
