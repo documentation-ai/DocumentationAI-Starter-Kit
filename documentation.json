@@ -1,6 +1,5 @@
 {
   "name": "Starter Kit",
-  "initialRoute": "introduction",
   "colors": {
     "light": {
       "brand": "#F97316"
